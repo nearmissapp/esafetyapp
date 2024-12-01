@@ -1,0 +1,18 @@
+project-root/
+├── package.json             # 프로젝트 정보 및 설치된 패키지 목록
+├── package-lock.json        # 패키지의 버전 잠금 파일
+├── server.js                # 메인 서버 파일 (앱의 진입점)
+├── db.js                    # PostgreSQL 연결 설정 파일
+├── views/                   # Pug 템플릿 파일을 저장하는 폴더
+│   ├── layout.pug           # 기본 레이아웃 파일
+│   ├── signup.pug           # 회원가입 페이지
+│   ├── login.pug            # 로그인 페이지
+│   ├── report.pug           # 신고 페이지
+├── public/                  # 정적 파일(CSS, JS, 이미지 등)을 저장하는 폴더
+│   ├── css/                 # CSS 파일
+│   │   ├── style.css        # 메인 스타일 파일
+│   └── uploads/             # 업로드된 이미지 파일 저장 폴더 (사진 업로드용)
+├── routes/                  # Express 라우터 파일을 저장하는 폴더
+│   ├── auth.js              # 회원가입 및 로그인 라우트
+│   ├── report.js            # 신고 기능 라우트
+└── uploads/                 # multer를 통해 업로드된 파일 저장 폴더

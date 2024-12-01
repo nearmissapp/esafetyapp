@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container
+    h2 로그인
+    form(action="/auth/login" method="POST")
+      label(for="username") 아이디:
+      input(type="text" name="username" id="username" placeholder="아이디를 입력하세요" required)
+
+      label(for="password") 비밀번호:
+      input(type="password" name="password" id="password" placeholder="비밀번호를 입력하세요" required)
+
+      button(type="submit") 로그인
+    p
+      | 아이디가 없으세요?
+      a(href="/auth/signup") 회원가입

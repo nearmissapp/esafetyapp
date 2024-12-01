@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .container
+    h2 안전신문고
+    form(action="/report" method="POST")
+      label(for="comment") 신고 내용:
+      textarea(name="comment" placeholder="신고 내용을 작성해주세요." rows="5" required)
+
+      button(type="submit") 신고 접수하기
