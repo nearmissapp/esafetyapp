@@ -1,10 +1,10 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: 'postgres',
-  host: '222.122.202.31', // 제공받은 IP
-  database: 'postgres', // wxhackathon?
-  password: 'hackathon123!',
+  user: '',
+  host: '',
+  database: '',
+  password: '',
   port: 5432,
 });
 
